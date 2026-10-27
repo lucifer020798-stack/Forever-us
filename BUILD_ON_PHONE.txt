@@ -1,0 +1,23 @@
+FOREVER US — NO-REPEAT EDITION
+
+Features added:
+- 60 romantic mini-stories, each with its own title and varied animated theme.
+- A featured story chosen on each app launch.
+- Story selection, surprise messages, quotes, and generated melody choices use saved no-repeat queues.
+- No-repeat means items do not repeat until all items in that collection have been used once. Then a new cycle starts.
+- Original short generated tones are included; these are not full commercial songs.
+- LocalStorage remembers selections. Clearing app data or reinstalling resets the history.
+
+Build on a phone:
+1. Extract this ZIP into a GitHub repository so the project files are at the repository root.
+2. Open the repository's Actions tab and run the Android build workflow.
+3. Download the APK artifact after the workflow succeeds.
+
+Note: This is the Android source project ZIP, not a compiled APK.
+
+
+NEW FEATURES
+- AI Settings are available inside the app; paste your own Gemini API key there.
+- No API key is embedded in the project. For a public website, use a backend proxy so visitors cannot extract the key.
+- Local browser history prevents exact repeated generated items on the same device. It cannot guarantee globally unique content or preserve history if app data is cleared / another device is used.
+- New mini-games: Heart Tap, Love Memory, Tic-Tac-Toe and Love Quiz.

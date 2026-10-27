@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#1c092b">
+<title>Forever Us ♡</title>
+<style>
+:root{--pink:#ff72c6;--rose:#ffb1df;--purple:#8b4bff;--deep:#1c092b;--glass:rgba(255,255,255,.09)}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#642a91 0%,#28103f 45%,#10071e 100%);color:#fff4ff;font-family:system-ui,-apple-system,sans-serif;min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(2px 2px at 20% 30%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 80% 20%,#ffc7ef 50%,transparent 60%),radial-gradient(2px 2px at 60% 70%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 30% 80%,#fff 50%,transparent 60%);background-size:170px 170px,230px 230px,190px 190px,140px 140px;opacity:.75;animation:twinkle 4s ease-in-out infinite alternate}
+@keyframes twinkle{from{opacity:.35}to{opacity:.9}}@keyframes float{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-13px) rotate(4deg)}}@keyframes pulse{0%,100%{transform:scale(1);filter:drop-shadow(0 0 8px #ff65ce)}50%{transform:scale(1.08);filter:drop-shadow(0 0 22px #ff65ce)}}@keyframes rise{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}@keyframes shimmer{0%{background-position:-200% center}100%{background-position:200% center}}@keyframes wiggle{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+.wrap{position:relative;max-width:520px;margin:auto;padding:22px 18px 36px;min-height:100vh}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}.brand{font-size:20px;font-weight:800;letter-spacing:.2px}.brand span{color:var(--rose)}.pill{border:1px solid #ffffff2c;background:#ffffff0c;color:#ffe8fa;border-radius:22px;padding:8px 12px}
+.hero{text-align:center;padding:22px 8px 20px}.logo{width:108px;height:108px;margin:0 auto 14px;border:1px solid #ffb6e7;border-radius:32px;background:linear-gradient(145deg,#7d39bd,#f65db5 55%,#38205e);display:grid;place-items:center;box-shadow:0 0 38px #ff64cb55,inset 0 0 24px #fff2;animation:float 4s ease-in-out infinite}.logo div{font-size:55px;animation:pulse 2.4s ease-in-out infinite}.script{font-family:Georgia,serif;font-style:italic;font-size:clamp(36px,10vw,49px);line-height:1.1;color:#ffd3f0;text-shadow:0 0 18px #ff71c7}.sub{color:#e9b9ff;font-size:13px;letter-spacing:2px;margin-top:8px}.welcome{color:#fff0fc;font-size:15px;line-height:1.6;margin:18px auto 0;max-width:330px}.section-title{font-size:17px;font-weight:750;margin:18px 0 12px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.tile{min-height:112px;border:1px solid #ffffff24;border-radius:22px;background:linear-gradient(145deg,#ffffff16,#ffffff06);padding:16px 14px;text-align:left;color:white;box-shadow:0 10px 28px #09031433;transition:transform .2s,border-color .2s;position:relative;overflow:hidden}.tile:active{transform:scale(.97)}.script{background:linear-gradient(90deg,#ffc8eb,#fff,#ff8bd3,#e4b4ff,#ffc8eb);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 5s linear infinite}.logo div{animation:pulse 2.4s ease-in-out infinite,wiggle 4s ease-in-out infinite}.tile{animation:rise .55s ease both}.tile:before{content:"";position:absolute;width:90px;height:90px;border-radius:50%;right:-35px;bottom:-45px;background:#ff72c622;filter:blur(2px)}.emoji{font-size:28px;display:block;margin-bottom:9px}.tile b{display:block;font-size:14px}.tile small{display:block;color:#d9b6eb;margin-top:4px;font-size:11px}.wide{grid-column:1/-1;min-height:100px;background:linear-gradient(110deg,#a32d87aa,#5d31a6aa);border-color:#ff9bdf66}.card{border:1px solid #ffffff29;background:linear-gradient(145deg,#ffffff15,#ffffff07);border-radius:24px;padding:22px 18px;margin:15px 0;box-shadow:0 15px 38px #09031444;animation:rise .4s ease}.card h2{font-family:Georgia,serif;font-style:italic;color:#ffd0ed;margin:0 0 12px;font-size:26px}.card p{line-height:1.7;color:#fff0fc;font-size:15px}.btn{display:block;width:100%;border:0;border-radius:18px;padding:15px 18px;background:linear-gradient(100deg,#ff62b8,#a75aff);color:white;font-size:15px;font-weight:800;box-shadow:0 8px 26px #f34bb955;margin-top:14px}.secondary{background:#ffffff12;border:1px solid #ffffff30;box-shadow:none}.back{border:0;background:transparent;color:#ffd2f0;font-size:15px;padding:8px 0}.hidden{display:none!important}.heart{position:fixed;bottom:-30px;left:var(--x);font-size:var(--s);opacity:0;pointer-events:none;animation:heartRise var(--d) linear forwards;z-index:10}@keyframes heartRise{10%{opacity:.9}100%{transform:translateY(-110vh) rotate(40deg);opacity:0}}.quote{font-family:Georgia,serif;font-style:italic;font-size:21px;line-height:1.55;color:#ffe1f5;text-align:center}.footer{text-align:center;color:#bfa0d8;font-size:11px;margin:25px 0 0}.memory{border-radius:18px;background:linear-gradient(135deg,#ff9ccf33,#9b7aff33);padding:15px;margin:10px 0;border:1px solid #ffffff20}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><div class="brand">♡ <span>Forever</span> Us</div><button class="pill" onclick="showPage('home')">⌂ Home</button></div>
+  <main id="home">
+    <div class="hero">
+      <div class="logo"><div>∞</div></div>
+      <div class="script">Forever Us</div>
+      <div class="sub">YOUR LOVE ✦ OUR UNIVERSE</div>
+      <p class="welcome">Hey, Kochi Pie 🥹💗<br>A little universe, just for you. Every time you open it, there's a new reason to smile.</p>
+    </div>
+    <div class="card" style="text-align:center"><div style="font-size:12px;color:#e5b7f8;letter-spacing:2px">TODAY'S LITTLE REMINDER</div><p class="quote" id="dailyQuote">You make ordinary moments feel like magic. ✨</p><button class="btn" onclick="newSurprise()">Open today's surprise 💝</button></div>
+    <div class="section-title">Made for my Kochi Pie 💗</div>
+    <div class="grid" style="margin-bottom:18px">
+    <button class="tile" onclick="petName(0)"><span class="emoji">🧸</span><b>My Baccha</b><small>Your softest hug</small></button>
+    <button class="tile" onclick="petName(1)"><span class="emoji">💍</span><b>My Wife</b><small>My forever person</small></button>
+    <button class="tile" onclick="petName(2)"><span class="emoji">💘</span><b>My Love</b><small>My favourite feeling</small></button>
+    <button class="tile" onclick="petName(3)"><span class="emoji">❤️‍🔥</span><b>My Love of the Heart</b><small>Close to my soul</small></button>
+    <button class="tile" onclick="petName(4)"><span class="emoji">😘</span><b>Meri Jaan</b><small>My precious person</small></button>
+    <button class="tile" onclick="petName(5)"><span class="emoji">👑</span><b>Meri Princess</b><small>Queen of my little universe</small></button>
+    </div><div class="section-title">Your little universe</div>
+    <div class="grid">
+      <button class="tile" onclick="showPage('letters')"><span class="emoji">💌</span><b>Love Letters</b><small>Words from my heart</small></button>
+      <button class="tile" onclick="showPage('memories')"><span class="emoji">📸</span><b>Our Memories</b><small>Little moments, forever</small></button>
+      <button class="tile" onclick="showPage('music')"><span class="emoji">🎵</span><b>Our Music</b><small>A song for this moment</small></button>
+      <button class="tile" onclick="showPage('world')"><span class="emoji">🌙</span><b>Our World</b><small>A universe for two</small></button>
+      <button class="tile wide" onclick="newSurprise()"><span class="emoji">🎁</span><b>Surprise Me!</b><small>You never know what magic is waiting…</small></button>
+    </div>
+    <div class="footer">Made with all my heart, just for you ∞</div>
+  </main>
+  <section id="page" class="hidden"><button class="back" onclick="showPage('home')">← Back to our universe</button><div id="pageContent"></div></section>
+</div>
+<script>
+const surprises=[
+{title:"A little reminder 💗",text:"You are not just special. You are your own kind of wonderful. I hope today gives you a hundred reasons to smile, and if it doesn't, remember that you already give me one. 💕"},
+{title:"If I could gift you anything ✨",text:"I'd give you the ability to see yourself through my eyes, even for one minute. Then you'd understand why you are so precious to me."},
+{title:"Your virtual hug 🧸",text:"Imagine the warmest hug, the kind that makes the world quiet for a moment. Hold it for five seconds. That's me, reminding you that you matter."},
+{title:"A tiny promise 🌙",text:"I promise to keep finding new ways to make you smile, to listen when you need me, and to celebrate the little things that make you uniquely you."},
+{title:"The universe picked a star 🌟",text:"Somewhere in this huge universe, two lives crossed paths. I'm really glad ours did. You make my world brighter in ways you may never fully know."},
+{title:"Reasons to smile 🌷",text:"Your laugh. Your little expressions. The way you make simple moments memorable. The way you are completely, wonderfully yourself. That's today's list—and there are a million more."},
+{title:"Secret message 🔐",text:"Psst… if you are reading this, here's your secret mission: smile right now, drink some water, and remember that someone is cheering for you. 💖"}
+];
+const quotes=["You make ordinary moments feel like magic. ✨","If my heart had a home screen, your smile would be the wallpaper. 💗","In every version of my future, I hope there's laughter with you. 🌙","You deserve soft days, kind words, and the biggest hugs. 🧸","The universe is huge, but this little corner is just for you. 💫","You are someone's favourite notification. Mine, especially. 💌"];
+let seen=JSON.parse(localStorage.getItem('foreverSeen')||'[]');
+function rand(arr){return arr[Math.floor(Math.random()*arr.length)]}
+function hearts(n=14){for(let i=0;i<n;i++){let h=document.createElement('div');h.className='heart';h.textContent=rand(['💗','💕','✨','💖','🌸']);h.style.setProperty('--x',Math.random()*100+'vw');h.style.setProperty('--s',(14+Math.random()*22)+'px');h.style.setProperty('--d',(3+Math.random()*4)+'s');document.body.appendChild(h);setTimeout(()=>h.remove(),7500)}}
+const petNames=[
+    {title:"For my Baccha 🧸",text:"A giant virtual hug for you. You don't have to be strong every second, baccha. Take a breath and remember you deserve gentleness too. 💗"},
+    {title:"For my Wife 💍",text:"In my favourite daydreams, we keep choosing each other, laughing at silly things, and building a home full of warmth. You are precious to me. ♡"},
+    {title:"For my Love 💘",text:"If I could pause one moment, it would be one where you're smiling without a care in the world. I hope I get to be one reason behind that smile. ✨"},
+    {title:"For my Love of the Heart ❤️‍🔥",text:"You have a place in my heart that words can't fully explain. You matter to me, deeply, and I hope you feel loved. 🌙"},
+    {title:"Meri Jaan 😘",text:"Meri jaan, drink some water, take a little break, and be kind to yourself today. Consider this a forehead kiss and a warm hug through the screen. 💋"},
+    {title:"Meri Princess 👑",text:"Hello, princess. Your royal duties today are to smile, treat yourself kindly, and remember you don't need to be perfect to be wonderful. 👑💖"}
+    ];
+    function petName(i){let p=petNames[i];hearts(20);document.getElementById('pageContent').innerHTML=`<div class="card" style="text-align:center"><div style="font-size:52px;animation:pulse 2s infinite">💗</div><h2>${p.title}</h2><p>${p.text}</p><button class="btn" onclick="newSurprise()">Another surprise for Kochi Pie ✨</button><button class="btn secondary" onclick="showPage('home')">Back to our universe ♡</button></div>`;showPage('custom')}
+    function newSurprise(){let choices=surprises.map((s,i)=>({...s,i})).filter(s=>!seen.includes(s.i));if(!choices.length){seen=[];choices=surprises.map((s,i)=>({...s,i}))}let s=rand(choices);seen.push(s.i);localStorage.setItem('foreverSeen',JSON.stringify(seen));hearts(24);document.getElementById('pageContent').innerHTML=`<div class="card" style="text-align:center"><div style="font-size:48px;animation:pulse 2s infinite">💝</div><h2>${s.title}</h2><p>${s.text}</p><button class="btn" onclick="newSurprise()">One more surprise ✨</button><button class="btn secondary" onclick="showPage('home')">Keep this feeling 💗</button></div>`;showPage('custom')}
+function showPage(name){document.getElementById('home').classList.toggle('hidden',name!=='home');document.getElementById('page').classList.toggle('hidden',name==='home');if(name==='home')return;let c=document.getElementById('pageContent');if(name==='custom')return;
+let data={
+letters:`<div class="card"><h2>Dear You, 💌</h2><p>There are so many little things I want you to know. You bring a kind of light into ordinary days that is difficult to explain. I hope you never forget how much you matter—not just to me, but simply because you are you.</p><p>On your happy days, I hope I get to celebrate with you. On your difficult days, I hope I can be a safe place to land. And on completely normal days, I hope we make beautiful memories without even trying.</p><p style="text-align:right;color:#ffb7e2">Always yours, ♡</p><button class="btn" onclick="newSurprise()">Reveal a hidden note ✨</button></div>`,
+memories:`<div class="card"><h2>Our little scrapbook 📸</h2><p>Every great story is made of tiny moments. Add your favourite photos and write the story behind each one.</p><div class="memory">🌸 <b>My favourite kind of moment</b><br><small>When we're laughing about something nobody else understands.</small></div><div class="memory">🌙 <b>A memory to make</b><br><small>A quiet evening, a favourite song, and no need to be anywhere else.</small></div><p style="font-size:12px;color:#d9b6eb">Photo albums can be personalised by adding your pictures to the app project.</p></div>`,
+music:`<div class="card" style="text-align:center"><div style="font-size:70px;animation:float 4s infinite">💿</div><h2>Our little soundtrack 🎵</h2><p>Choose a song that reminds you of us, then make this screen your listening corner.</p><button class="btn" onclick="alert('Add your favourite song link in the app source to connect your music!')">Add our song ♡</button><button class="btn secondary" onclick="showPage('world')">Back to the stars 🌌</button><p style="font-size:12px;color:#d9b6eb">This starter version does not include bundled copyrighted music.</p></div>`,
+world:`<div class="card" style="text-align:center"><div style="font-size:64px;animation:float 4s infinite">🌙</div><h2>Our World</h2><p class="quote">“Somewhere between a million stars, we made a little world of our own.”</p><p>Here, the sky is always glowing, the stars always listen, and there's always room for one more beautiful memory.</p><button class="btn" onclick="hearts(35)">Make a wish together ✨</button></div>`
+};c.innerHTML=data[name]||''}
+document.getElementById('dailyQuote').textContent=rand(quotes);
+setTimeout(()=>hearts(8),800);
+</script>
+
+<style>
+.story-card{position:relative;overflow:hidden;text-align:center}
+.story-card:before{content:"";position:absolute;inset:-40%;background:conic-gradient(from 0deg,transparent,#ff8bd622,transparent,#b98aff22,transparent);animation:storyGlow 12s linear infinite;pointer-events:none}
+.story-card>*{position:relative}
+@keyframes storyGlow{to{transform:rotate(360deg)}}
+.story-art{font-size:58px;min-height:78px;display:grid;place-items:center;animation:float 3.5s ease-in-out infinite}
+.story-text{line-height:1.85;font-size:16px}
+.story-controls{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:16px}
+.story-controls button{flex:1;min-width:130px}
+</style>
+<script>
+const foreverStories = [{"title": "Moonlit Balcony — Chapter 1", "text": "One day, Kochi Pie, we found ourselves in a moment that seemed small to everyone else. The city grew quiet while the moon painted silver lines across the balcony. You shared your worries, and I listened until they felt lighter. You looked at me with that familiar sparkle, and suddenly the moment felt warmer. Love is not always solving everything; sometimes it is staying beside someone. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "hearts"}, {"title": "Rainy Bus Stop — Chapter 2", "text": "One day, Kochi Pie, we found ourselves in a moment that seemed small to everyone else. Rain tapped a rhythm on the shelter while the last bus was late. We shared one umbrella and laughed at our soaked shoes. We turned the awkward moment into a joke that became our own little tradition. An ordinary wait becomes a favourite memory with you. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "stars"}, {"title": "Paper Star — Chapter 3", "text": "One day, Kochi Pie, we found ourselves in a moment that seemed small to everyone else. A tiny paper star sat beside a handwritten note on your desk. Inside it was a promise to notice the small things that make you smile. We both smiled, realising we did not need a grand plan to feel close. The smallest gestures can hold the biggest love. My Kochi Pie, you make little moments worth remembering. Always. 💞", "theme": "rain"}, {"title": "Midnight Call — Chapter 4", "text": "One day, Kochi Pie, we found ourselves in a moment that seemed small to everyone else. The clock had passed midnight, but neither of us wanted to end the call. We ran out of stories, then stayed together in comfortable silence. For a while, every worry became quieter because we were being gentle with each other. Being understood can feel like coming home. And that is why I would choose another simple day with you, again and again. 💗", "theme": "flowers"}, {"title": "Flower Shop — Chapter 5", "text": "One day, Kochi Pie, we found ourselves in a moment that seemed small to everyone else. A little flower shop glowed warmly on a busy street. You chose the simplest flower, saying it looked happy without trying too hard. We turned the awkward moment into a joke that became our own little tradition. Your way of seeing the world is one of my favourite things. If I could save one feeling from that moment, it would be the peace of being near you. 🌙", "theme": "moon"}, {"title": "Train Window — Chapter 6", "text": "One day, Kochi Pie, we found ourselves in a moment that seemed small to everyone else. The world slipped past the train window in green and gold. We invented names for passing clouds and planned tiny adventures. We both smiled, realising we did not need a grand plan to feel close. The journey feels brighter when I get to share it with you. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "sparkles"}, {"title": "Starlit Promise — Chapter 7", "text": "One day, Kochi Pie, we found ourselves in a moment that seemed small to everyone else. A sky full of stars looked almost too beautiful to be real. We promised to speak honestly, forgive gently, and keep choosing kindness. For a while, every worry became quieter because we were being gentle with each other. Forever is built one thoughtful choice at a time. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "hearts"}, {"title": "Little Cafe — Chapter 8", "text": "One day, Kochi Pie, we found ourselves in a moment that seemed small to everyone else. Rainy windows and warm cups made a small cafe feel like a secret world. You smiled at a silly joke, and the whole room seemed to brighten. I remembered that love grows in the way we treat each other when nobody is watching. My favourite luxury is hearing you laugh. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "stars"}, {"title": "Lost Ribbon — Chapter 9", "text": "One day, Kochi Pie, we found ourselves in a moment that seemed small to everyone else. A ribbon had blown away in the garden, and we searched through the flowers. When we found it, you tied it around my wrist like a tiny lucky charm. We both smiled, realising we did not need a grand plan to feel close. Some moments become precious because we look for them together. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "rain"}, {"title": "Sunrise Walk — Chapter 10", "text": "One day, Kochi Pie, we found ourselves in a moment that seemed small to everyone else. The first light of morning spilled softly over the empty road. We walked slowly, sharing plans without needing to make every plan perfect. For a while, every worry became quieter because we were being gentle with each other. I hope life gives us many peaceful beginnings together. My Kochi Pie, you make little moments worth remembering. Always. 💞", "theme": "flowers"}, {"title": "Bookstore Note — Chapter 11", "text": "One day, Kochi Pie, we found ourselves in a moment that seemed small to everyone else. A forgotten note slipped from a book on a quiet shelf. You wrote a reply and tucked it back for a stranger to find. I remembered that love grows in the way we treat each other when nobody is watching. Your kindness reaches farther than you know. And that is why I would choose another simple day with you, again and again. 💗", "theme": "moon"}, {"title": "Snow Globe — Chapter 12", "text": "One day, Kochi Pie, we found ourselves in a moment that seemed small to everyone else. A little snow globe glittered beneath a lamp. We shook it and watched the tiny world settle, then promised to be patient with each other. You looked at me with that familiar sparkle, and suddenly the moment felt warmer. Even after a storm, we can find our calm again. If I could save one feeling from that moment, it would be the peace of being near you. 🌙", "theme": "sparkles"}, {"title": "Moonlit Balcony — Chapter 13", "text": "In our little corner of the universe, an ordinary day quietly became special. The city grew quiet while the moon painted silver lines across the balcony. You shared your worries, and I listened until they felt lighter. For a while, every worry became quieter because we were being gentle with each other. Love is not always solving everything; sometimes it is staying beside someone. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "hearts"}, {"title": "Rainy Bus Stop — Chapter 14", "text": "In our little corner of the universe, an ordinary day quietly became special. Rain tapped a rhythm on the shelter while the last bus was late. We shared one umbrella and laughed at our soaked shoes. I remembered that love grows in the way we treat each other when nobody is watching. An ordinary wait becomes a favourite memory with you. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "stars"}, {"title": "Paper Star — Chapter 15", "text": "In our little corner of the universe, an ordinary day quietly became special. A tiny paper star sat beside a handwritten note on your desk. Inside it was a promise to notice the small things that make you smile. You looked at me with that familiar sparkle, and suddenly the moment felt warmer. The smallest gestures can hold the biggest love. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "rain"}, {"title": "Midnight Call — Chapter 16", "text": "In our little corner of the universe, an ordinary day quietly became special. The clock had passed midnight, but neither of us wanted to end the call. We ran out of stories, then stayed together in comfortable silence. We turned the awkward moment into a joke that became our own little tradition. Being understood can feel like coming home. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "flowers"}, {"title": "Flower Shop — Chapter 17", "text": "In our little corner of the universe, an ordinary day quietly became special. A little flower shop glowed warmly on a busy street. You chose the simplest flower, saying it looked happy without trying too hard. I remembered that love grows in the way we treat each other when nobody is watching. Your way of seeing the world is one of my favourite things. My Kochi Pie, you make little moments worth remembering. Always. 💞", "theme": "moon"}, {"title": "Train Window — Chapter 18", "text": "In our little corner of the universe, an ordinary day quietly became special. The world slipped past the train window in green and gold. We invented names for passing clouds and planned tiny adventures. You looked at me with that familiar sparkle, and suddenly the moment felt warmer. The journey feels brighter when I get to share it with you. And that is why I would choose another simple day with you, again and again. 💗", "theme": "sparkles"}, {"title": "Starlit Promise — Chapter 19", "text": "In our little corner of the universe, an ordinary day quietly became special. A sky full of stars looked almost too beautiful to be real. We promised to speak honestly, forgive gently, and keep choosing kindness. We turned the awkward moment into a joke that became our own little tradition. Forever is built one thoughtful choice at a time. If I could save one feeling from that moment, it would be the peace of being near you. 🌙", "theme": "hearts"}, {"title": "Little Cafe — Chapter 20", "text": "In our little corner of the universe, an ordinary day quietly became special. Rainy windows and warm cups made a small cafe feel like a secret world. You smiled at a silly joke, and the whole room seemed to brighten. We both smiled, realising we did not need a grand plan to feel close. My favourite luxury is hearing you laugh. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "stars"}, {"title": "Lost Ribbon — Chapter 21", "text": "In our little corner of the universe, an ordinary day quietly became special. A ribbon had blown away in the garden, and we searched through the flowers. When we found it, you tied it around my wrist like a tiny lucky charm. You looked at me with that familiar sparkle, and suddenly the moment felt warmer. Some moments become precious because we look for them together. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "rain"}, {"title": "Sunrise Walk — Chapter 22", "text": "In our little corner of the universe, an ordinary day quietly became special. The first light of morning spilled softly over the empty road. We walked slowly, sharing plans without needing to make every plan perfect. We turned the awkward moment into a joke that became our own little tradition. I hope life gives us many peaceful beginnings together. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "flowers"}, {"title": "Bookstore Note — Chapter 23", "text": "In our little corner of the universe, an ordinary day quietly became special. A forgotten note slipped from a book on a quiet shelf. You wrote a reply and tucked it back for a stranger to find. We both smiled, realising we did not need a grand plan to feel close. Your kindness reaches farther than you know. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "moon"}, {"title": "Snow Globe — Chapter 24", "text": "In our little corner of the universe, an ordinary day quietly became special. A little snow globe glittered beneath a lamp. We shook it and watched the tiny world settle, then promised to be patient with each other. For a while, every worry became quieter because we were being gentle with each other. Even after a storm, we can find our calm again. My Kochi Pie, you make little moments worth remembering. Always. 💞", "theme": "sparkles"}, {"title": "Moonlit Balcony — Chapter 25", "text": "Imagine this, my love: the world was busy, but we had one gentle moment to ourselves. The city grew quiet while the moon painted silver lines across the balcony. You shared your worries, and I listened until they felt lighter. We turned the awkward moment into a joke that became our own little tradition. Love is not always solving everything; sometimes it is staying beside someone. And that is why I would choose another simple day with you, again and again. 💗", "theme": "hearts"}, {"title": "Rainy Bus Stop — Chapter 26", "text": "Imagine this, my love: the world was busy, but we had one gentle moment to ourselves. Rain tapped a rhythm on the shelter while the last bus was late. We shared one umbrella and laughed at our soaked shoes. We both smiled, realising we did not need a grand plan to feel close. An ordinary wait becomes a favourite memory with you. If I could save one feeling from that moment, it would be the peace of being near you. 🌙", "theme": "stars"}, {"title": "Paper Star — Chapter 27", "text": "Imagine this, my love: the world was busy, but we had one gentle moment to ourselves. A tiny paper star sat beside a handwritten note on your desk. Inside it was a promise to notice the small things that make you smile. For a while, every worry became quieter because we were being gentle with each other. The smallest gestures can hold the biggest love. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "rain"}, {"title": "Midnight Call — Chapter 28", "text": "Imagine this, my love: the world was busy, but we had one gentle moment to ourselves. The clock had passed midnight, but neither of us wanted to end the call. We ran out of stories, then stayed together in comfortable silence. I remembered that love grows in the way we treat each other when nobody is watching. Being understood can feel like coming home. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "flowers"}, {"title": "Flower Shop — Chapter 29", "text": "Imagine this, my love: the world was busy, but we had one gentle moment to ourselves. A little flower shop glowed warmly on a busy street. You chose the simplest flower, saying it looked happy without trying too hard. We both smiled, realising we did not need a grand plan to feel close. Your way of seeing the world is one of my favourite things. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "moon"}, {"title": "Train Window — Chapter 30", "text": "Imagine this, my love: the world was busy, but we had one gentle moment to ourselves. The world slipped past the train window in green and gold. We invented names for passing clouds and planned tiny adventures. For a while, every worry became quieter because we were being gentle with each other. The journey feels brighter when I get to share it with you. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "sparkles"}, {"title": "Starlit Promise — Chapter 31", "text": "Imagine this, my love: the world was busy, but we had one gentle moment to ourselves. A sky full of stars looked almost too beautiful to be real. We promised to speak honestly, forgive gently, and keep choosing kindness. I remembered that love grows in the way we treat each other when nobody is watching. Forever is built one thoughtful choice at a time. My Kochi Pie, you make little moments worth remembering. Always. 💞", "theme": "hearts"}, {"title": "Little Cafe — Chapter 32", "text": "Imagine this, my love: the world was busy, but we had one gentle moment to ourselves. Rainy windows and warm cups made a small cafe feel like a secret world. You smiled at a silly joke, and the whole room seemed to brighten. You looked at me with that familiar sparkle, and suddenly the moment felt warmer. My favourite luxury is hearing you laugh. And that is why I would choose another simple day with you, again and again. 💗", "theme": "stars"}, {"title": "Lost Ribbon — Chapter 33", "text": "Imagine this, my love: the world was busy, but we had one gentle moment to ourselves. A ribbon had blown away in the garden, and we searched through the flowers. When we found it, you tied it around my wrist like a tiny lucky charm. For a while, every worry became quieter because we were being gentle with each other. Some moments become precious because we look for them together. If I could save one feeling from that moment, it would be the peace of being near you. 🌙", "theme": "rain"}, {"title": "Sunrise Walk — Chapter 34", "text": "Imagine this, my love: the world was busy, but we had one gentle moment to ourselves. The first light of morning spilled softly over the empty road. We walked slowly, sharing plans without needing to make every plan perfect. I remembered that love grows in the way we treat each other when nobody is watching. I hope life gives us many peaceful beginnings together. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "flowers"}, {"title": "Bookstore Note — Chapter 35", "text": "Imagine this, my love: the world was busy, but we had one gentle moment to ourselves. A forgotten note slipped from a book on a quiet shelf. You wrote a reply and tucked it back for a stranger to find. You looked at me with that familiar sparkle, and suddenly the moment felt warmer. Your kindness reaches farther than you know. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "moon"}, {"title": "Snow Globe — Chapter 36", "text": "Imagine this, my love: the world was busy, but we had one gentle moment to ourselves. A little snow globe glittered beneath a lamp. We shook it and watched the tiny world settle, then promised to be patient with each other. We turned the awkward moment into a joke that became our own little tradition. Even after a storm, we can find our calm again. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "sparkles"}, {"title": "Moonlit Balcony — Chapter 37", "text": "In a story written just for us, the universe gave us a simple little surprise. The city grew quiet while the moon painted silver lines across the balcony. You shared your worries, and I listened until they felt lighter. I remembered that love grows in the way we treat each other when nobody is watching. Love is not always solving everything; sometimes it is staying beside someone. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "hearts"}, {"title": "Rainy Bus Stop — Chapter 38", "text": "In a story written just for us, the universe gave us a simple little surprise. Rain tapped a rhythm on the shelter while the last bus was late. We shared one umbrella and laughed at our soaked shoes. You looked at me with that familiar sparkle, and suddenly the moment felt warmer. An ordinary wait becomes a favourite memory with you. My Kochi Pie, you make little moments worth remembering. Always. 💞", "theme": "stars"}, {"title": "Paper Star — Chapter 39", "text": "In a story written just for us, the universe gave us a simple little surprise. A tiny paper star sat beside a handwritten note on your desk. Inside it was a promise to notice the small things that make you smile. We turned the awkward moment into a joke that became our own little tradition. The smallest gestures can hold the biggest love. And that is why I would choose another simple day with you, again and again. 💗", "theme": "rain"}, {"title": "Midnight Call — Chapter 40", "text": "In a story written just for us, the universe gave us a simple little surprise. The clock had passed midnight, but neither of us wanted to end the call. We ran out of stories, then stayed together in comfortable silence. We both smiled, realising we did not need a grand plan to feel close. Being understood can feel like coming home. If I could save one feeling from that moment, it would be the peace of being near you. 🌙", "theme": "flowers"}, {"title": "Flower Shop — Chapter 41", "text": "In a story written just for us, the universe gave us a simple little surprise. A little flower shop glowed warmly on a busy street. You chose the simplest flower, saying it looked happy without trying too hard. You looked at me with that familiar sparkle, and suddenly the moment felt warmer. Your way of seeing the world is one of my favourite things. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "moon"}, {"title": "Train Window — Chapter 42", "text": "In a story written just for us, the universe gave us a simple little surprise. The world slipped past the train window in green and gold. We invented names for passing clouds and planned tiny adventures. We turned the awkward moment into a joke that became our own little tradition. The journey feels brighter when I get to share it with you. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "sparkles"}, {"title": "Starlit Promise — Chapter 43", "text": "In a story written just for us, the universe gave us a simple little surprise. A sky full of stars looked almost too beautiful to be real. We promised to speak honestly, forgive gently, and keep choosing kindness. We both smiled, realising we did not need a grand plan to feel close. Forever is built one thoughtful choice at a time. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "hearts"}, {"title": "Little Cafe — Chapter 44", "text": "In a story written just for us, the universe gave us a simple little surprise. Rainy windows and warm cups made a small cafe feel like a secret world. You smiled at a silly joke, and the whole room seemed to brighten. For a while, every worry became quieter because we were being gentle with each other. My favourite luxury is hearing you laugh. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "stars"}, {"title": "Lost Ribbon — Chapter 45", "text": "In a story written just for us, the universe gave us a simple little surprise. A ribbon had blown away in the garden, and we searched through the flowers. When we found it, you tied it around my wrist like a tiny lucky charm. We turned the awkward moment into a joke that became our own little tradition. Some moments become precious because we look for them together. My Kochi Pie, you make little moments worth remembering. Always. 💞", "theme": "rain"}, {"title": "Sunrise Walk — Chapter 46", "text": "In a story written just for us, the universe gave us a simple little surprise. The first light of morning spilled softly over the empty road. We walked slowly, sharing plans without needing to make every plan perfect. We both smiled, realising we did not need a grand plan to feel close. I hope life gives us many peaceful beginnings together. And that is why I would choose another simple day with you, again and again. 💗", "theme": "flowers"}, {"title": "Bookstore Note — Chapter 47", "text": "In a story written just for us, the universe gave us a simple little surprise. A forgotten note slipped from a book on a quiet shelf. You wrote a reply and tucked it back for a stranger to find. For a while, every worry became quieter because we were being gentle with each other. Your kindness reaches farther than you know. If I could save one feeling from that moment, it would be the peace of being near you. 🌙", "theme": "moon"}, {"title": "Snow Globe — Chapter 48", "text": "In a story written just for us, the universe gave us a simple little surprise. A little snow globe glittered beneath a lamp. We shook it and watched the tiny world settle, then promised to be patient with each other. I remembered that love grows in the way we treat each other when nobody is watching. Even after a storm, we can find our calm again. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "sparkles"}, {"title": "Moonlit Balcony — Chapter 49", "text": "My princess, this is one of those moments I would keep in a tiny glass jar forever. The city grew quiet while the moon painted silver lines across the balcony. You shared your worries, and I listened until they felt lighter. We both smiled, realising we did not need a grand plan to feel close. Love is not always solving everything; sometimes it is staying beside someone. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "hearts"}, {"title": "Rainy Bus Stop — Chapter 50", "text": "My princess, this is one of those moments I would keep in a tiny glass jar forever. Rain tapped a rhythm on the shelter while the last bus was late. We shared one umbrella and laughed at our soaked shoes. For a while, every worry became quieter because we were being gentle with each other. An ordinary wait becomes a favourite memory with you. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "stars"}, {"title": "Paper Star — Chapter 51", "text": "My princess, this is one of those moments I would keep in a tiny glass jar forever. A tiny paper star sat beside a handwritten note on your desk. Inside it was a promise to notice the small things that make you smile. I remembered that love grows in the way we treat each other when nobody is watching. The smallest gestures can hold the biggest love. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "rain"}, {"title": "Midnight Call — Chapter 52", "text": "My princess, this is one of those moments I would keep in a tiny glass jar forever. The clock had passed midnight, but neither of us wanted to end the call. We ran out of stories, then stayed together in comfortable silence. You looked at me with that familiar sparkle, and suddenly the moment felt warmer. Being understood can feel like coming home. My Kochi Pie, you make little moments worth remembering. Always. 💞", "theme": "flowers"}, {"title": "Flower Shop — Chapter 53", "text": "My princess, this is one of those moments I would keep in a tiny glass jar forever. A little flower shop glowed warmly on a busy street. You chose the simplest flower, saying it looked happy without trying too hard. For a while, every worry became quieter because we were being gentle with each other. Your way of seeing the world is one of my favourite things. And that is why I would choose another simple day with you, again and again. 💗", "theme": "moon"}, {"title": "Train Window — Chapter 54", "text": "My princess, this is one of those moments I would keep in a tiny glass jar forever. The world slipped past the train window in green and gold. We invented names for passing clouds and planned tiny adventures. I remembered that love grows in the way we treat each other when nobody is watching. The journey feels brighter when I get to share it with you. If I could save one feeling from that moment, it would be the peace of being near you. 🌙", "theme": "sparkles"}, {"title": "Starlit Promise — Chapter 55", "text": "My princess, this is one of those moments I would keep in a tiny glass jar forever. A sky full of stars looked almost too beautiful to be real. We promised to speak honestly, forgive gently, and keep choosing kindness. You looked at me with that familiar sparkle, and suddenly the moment felt warmer. Forever is built one thoughtful choice at a time. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "hearts"}, {"title": "Little Cafe — Chapter 56", "text": "My princess, this is one of those moments I would keep in a tiny glass jar forever. Rainy windows and warm cups made a small cafe feel like a secret world. You smiled at a silly joke, and the whole room seemed to brighten. We turned the awkward moment into a joke that became our own little tradition. My favourite luxury is hearing you laugh. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "stars"}, {"title": "Lost Ribbon — Chapter 57", "text": "My princess, this is one of those moments I would keep in a tiny glass jar forever. A ribbon had blown away in the garden, and we searched through the flowers. When we found it, you tied it around my wrist like a tiny lucky charm. I remembered that love grows in the way we treat each other when nobody is watching. Some moments become precious because we look for them together. So if today feels ordinary, remember: ordinary days can hold extraordinary love. ❤️", "theme": "rain"}, {"title": "Sunrise Walk — Chapter 58", "text": "My princess, this is one of those moments I would keep in a tiny glass jar forever. The first light of morning spilled softly over the empty road. We walked slowly, sharing plans without needing to make every plan perfect. You looked at me with that familiar sparkle, and suddenly the moment felt warmer. I hope life gives us many peaceful beginnings together. The story ended, but the promise stayed: kindness, laughter, and us. ✨", "theme": "flowers"}, {"title": "Bookstore Note — Chapter 59", "text": "My princess, this is one of those moments I would keep in a tiny glass jar forever. A forgotten note slipped from a book on a quiet shelf. You wrote a reply and tucked it back for a stranger to find. We turned the awkward moment into a joke that became our own little tradition. Your kindness reaches farther than you know. My Kochi Pie, you make little moments worth remembering. Always. 💞", "theme": "moon"}, {"title": "Snow Globe — Chapter 60", "text": "My princess, this is one of those moments I would keep in a tiny glass jar forever. A little snow globe glittered beneath a lamp. We shook it and watched the tiny world settle, then promised to be patient with each other. We both smiled, realising we did not need a grand plan to feel close. Even after a storm, we can find our calm again. And that is why I would choose another simple day with you, again and again. 💗", "theme": "sparkles"}];
+const foreverQuotes = [
+"You make ordinary moments feel like magic. ✨","If my heart had a home screen, your smile would be the wallpaper. 💗",
+"In every version of my future, I hope there's laughter with you. 🌙","You deserve soft days, kind words, and the biggest hugs. 🧸",
+"The universe is huge, but this little corner is just for you. 💫","You are someone's favourite notification. Mine, especially. 💌",
+"Love is the small kindness we choose again and again. 💞","Your smile deserves a place in every good day. 🌷",
+"Some people feel like sunshine after rain. You do. ☀️","My favourite plan is making another beautiful memory with you. 💖"
+];
+const foreverTracks = [
+{name:"Moonlight Promise",freq:523.25},{name:"Pink Galaxy Waltz",freq:587.33},
+{name:"Little Heartbeat",freq:659.25},{name:"Starlit Hug",freq:493.88},
+{name:"Petals in the Sky",freq:440},{name:"Dreaming of Kochi Pie",freq:392},
+{name:"Forever, Softly",freq:349.23},{name:"Our Tiny Universe",freq:466.16}
+];
+function fGet(k,d){try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch(e){return d}}
+function fSet(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function fDraw(key,items){
+ let bag=fGet(key,[]).filter(i=>Number.isInteger(i)&&i>=0&&i<items.length);
+ if(!bag.length){
+   bag=items.map((_,i)=>i);
+   const last=fGet(key+"_last",-1);
+   if(items.length>1&&last>=0) bag=bag.filter(i=>i!==last);
+ }
+ const p=Math.floor(Math.random()*bag.length), idx=bag.splice(p,1)[0];
+ fSet(key,bag); fSet(key+"_last",idx); return items[idx];
+}
+const foreverArt={hearts:"💗💞💖",stars:"🌌🌠✨",rain:"🌧️☂️💗",flowers:"🌸🌷🌼",moon:"🌙⭐💜",sparkles:"✨🪄💫"};
+function openStory(){
+ const s=fDraw("forever_story_bag",foreverStories);
+ if(typeof hearts==="function") hearts(20);
+ document.getElementById("pageContent").innerHTML=`<div class="card story-card"><div class="story-art">${foreverArt[s.theme]||"💗✨🌙"}</div><h2>${s.title}</h2><p class="story-text">${s.text}</p><div class="story-controls"><button class="btn" onclick="openStory()">Next new story 💞</button><button class="btn secondary" onclick="newSurprise()">Surprise me 🎁</button><button class="btn secondary" onclick="showPage('home')">Back home ♡</button></div><p style="font-size:12px;color:#e6c9f5;margin-top:14px">No story repeats until this story collection has been shown once.</p></div>`;
+ showPage("custom");
+}
+function newSong(){
+ const s=fDraw("forever_track_bag",foreverTracks);
+ const el=document.getElementById("musicTrack");
+ if(el) el.textContent="Selected melody: "+s.name;
+ try{
+   if(window.foreverToneCtx) window.foreverToneCtx.close();
+   const Ctx=window.AudioContext||window.webkitAudioContext;
+   if(!Ctx) throw new Error("No audio");
+   const ctx=new Ctx(); window.foreverToneCtx=ctx;
+   const osc=ctx.createOscillator(), gain=ctx.createGain();
+   osc.type="sine"; osc.frequency.value=s.freq; gain.gain.value=0.035;
+   osc.connect(gain); gain.connect(ctx.destination); osc.start();
+   gain.gain.setTargetAtTime(0.001,ctx.currentTime+1,1.8);
+   setTimeout(()=>{try{ctx.close()}catch(e){}},4500);
+ }catch(e){if(el)el.textContent="Selected: "+s.name+" (sound is unavailable in this browser)."}
+}
+const foreverOldShowPage=showPage;
+showPage=function(name){
+ foreverOldShowPage(name);
+ if(name==="music"){
+   const c=document.getElementById("pageContent");
+   c.innerHTML=`<div class="card story-card" style="text-align:center"><div class="story-art">💿🎵💗</div><h2>Our little soundtrack</h2><p>Choose a fresh original melody. Tracks are selected without repeats until all tracks in this collection have been used.</p><div id="musicTrack" class="quote">Ready for a little melody 💗</div><button class="btn" onclick="newSong()">Play a fresh melody ♡</button><button class="btn secondary" onclick="showPage('world')">Back to the stars 🌌</button><p style="font-size:12px;color:#d9b6eb">These are short generated tones, not full commercial songs. You can add licensed music files later.</p></div>`;
+ }
+};
+const foreverOldSurprise=newSurprise;
+newSurprise=function(){
+ const s=fDraw("forever_surprise_bag",surprises);
+ if(typeof hearts==="function") hearts(24);
+ document.getElementById("pageContent").innerHTML=`<div class="card story-card" style="text-align:center"><div class="story-art">💝✨💝</div><h2>${s.title}</h2><p>${s.text}</p><button class="btn" onclick="newSurprise()">One more surprise ✨</button><button class="btn secondary" onclick="openStory()">Read a love story 📖</button><button class="btn secondary" onclick="showPage('home')">Back to our universe 💗</button><p style="font-size:12px;color:#e6c9f5">Surprises will not repeat until the current set is exhausted.</p></div>`;
+ showPage("custom");
+};
+window.addEventListener("load",()=>{
+ const tile=document.createElement("button");
+ tile.className="tile"; tile.innerHTML='<span class="emoji">📖</span><b>Love Story of the Moment</b><small>A fresh story every visit</small>';
+ tile.onclick=openStory;
+ const grid=document.querySelector("#home .grid");
+ if(grid) grid.insertBefore(tile,grid.firstChild);
+ const host=document.createElement("div");
+ host.className="card";host.style.textAlign="center";host.style.margin="14px 0";
+ const featured=fDraw("forever_launch_story_bag",foreverStories);
+ host.innerHTML=`<b>Fresh story for Kochi Pie 💗</b><p>${featured.title}</p><button class="btn">Open today's story ✨</button>`;
+ host.querySelector("button").onclick=()=>{document.getElementById("pageContent").innerHTML=`<div class="card story-card"><div class="story-art">${foreverArt[featured.theme]||"💗✨"}</div><h2>${featured.title}</h2><p class="story-text">${featured.text}</p><div class="story-controls"><button class="btn" onclick="openStory()">Next new story 💞</button><button class="btn secondary" onclick="showPage('home')">Back home ♡</button></div></div>`;showPage("custom")};
+ const home=document.getElementById("home");if(home)home.insertBefore(host,home.children[1]||null);
+ const q=document.getElementById("dailyQuote");if(q)q.textContent=fDraw("forever_quote_bag",foreverQuotes);
+});
+</script>
+
+
+<style>
+.top-actions{display:flex;gap:8px;align-items:center}
+.api-input-group{text-align:left;margin:14px 0}
+.api-input-group label{display:block;font-size:12px;color:#e5b7f8;letter-spacing:1px;margin-bottom:6px;font-weight:700}
+.api-input{width:100%;border:1px solid #ffffff38;background:rgba(16,7,30,.65);color:#fff4ff;border-radius:14px;padding:12px 14px;font-size:14px;outline:none;font-family:inherit;transition:border-color .2s,box-shadow .2s}
+.api-input:focus{border-color:#ff72c6;box-shadow:0 0 14px #ff72c644}
+.api-badge{display:inline-block;padding:5px 12px;border-radius:14px;font-size:12px;font-weight:700;margin-bottom:10px}
+.api-badge.active{background:#28a74533;border:1px solid #5cd67966;color:#a8ffbe}
+.api-badge.inactive{background:#ffffff14;border:1px solid #ffffff28;color:#d9b6eb}
+.api-status-msg{font-size:13px;margin-top:10px;min-height:20px;color:#ffb7e2;font-weight:600}
+.api-row{display:flex;gap:8px;align-items:center}
+.api-row .api-input{flex:1}
+.api-toggle-btn{border:1px solid #ffffff30;background:#ffffff15;color:#ffe8fa;border-radius:14px;padding:12px 14px;font-size:13px;cursor:pointer;white-space:nowrap}
+</style>
+<script>
+const FOREVER_API_CONFIG_KEY = "forever_inapp_api_config";
+
+function getInAppApiConfig(){
+  try{
+    const saved = JSON.parse(localStorage.getItem(FOREVER_API_CONFIG_KEY) || "{}");
+    return {
+      provider: saved.provider || "gemini",
+      apiKey: saved.apiKey || "",
+      apiUrl: saved.apiUrl || "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+      model: saved.model || "gemini-2.5-flash"
+    };
+  }catch(e){
+    return {provider:"gemini", apiKey:"", apiUrl:"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent", model:"gemini-2.5-flash"};
+  }
+}
+
+function saveInAppApiConfig(){
+  const providerEl = document.getElementById("inAppApiProvider");
+  const keyEl = document.getElementById("inAppApiKey");
+  const urlEl = document.getElementById("inAppApiUrl");
+  const modelEl = document.getElementById("inAppApiModel");
+  const cfg = {
+    provider: providerEl ? providerEl.value : "gemini",
+    apiKey: keyEl ? keyEl.value.trim() : "",
+    apiUrl: urlEl ? urlEl.value.trim() : "",
+    model: modelEl ? modelEl.value.trim() : ""
+  };
+  try{
+    localStorage.setItem(FOREVER_API_CONFIG_KEY, JSON.stringify(cfg));
+    localStorage.setItem("forever_api_key", cfg.apiKey);
+    window.FOREVER_API_KEY = cfg.apiKey;
+    window.FOREVER_API_CONFIG = cfg;
+  }catch(e){}
+  const msg = document.getElementById("apiSaveStatus");
+  if(msg){
+    msg.style.color = "#a8ffbe";
+    msg.textContent = "✓ API Settings saved successfully!";
+  }
+  const badge = document.getElementById("apiStatusBadge");
+  if(badge){
+    badge.className = "api-badge " + (cfg.apiKey ? "active" : "inactive");
+    badge.textContent = cfg.apiKey ? "● API Key Configured" : "○ No API Key Set";
+  }
+  if(typeof hearts === "function") hearts(12);
+}
+
+function clearInAppApiConfig(){
+  try{
+    localStorage.removeItem(FOREVER_API_CONFIG_KEY);
+    localStorage.removeItem("forever_api_key");
+    window.FOREVER_API_KEY = "";
+    window.FOREVER_API_CONFIG = getInAppApiConfig();
+  }catch(e){}
+  openSettings();
+  const msg = document.getElementById("apiSaveStatus");
+  if(msg){
+    msg.style.color = "#ffb7e2";
+    msg.textContent = "API Key cleared.";
+  }
+}
+
+function toggleApiKeyVisibility(){
+  const inp = document.getElementById("inAppApiKey");
+  const btn = document.getElementById("toggleKeyBtn");
+  if(!inp) return;
+  if(inp.type === "password"){
+    inp.type = "text";
+    if(btn) btn.textContent = "🙈 Hide";
+  }else{
+    inp.type = "password";
+    if(btn) btn.textContent = "👁️ Show";
+  }
+}
+
+function onApiProviderChange(){
+  const p = document.getElementById("inAppApiProvider").value;
+  const urlEl = document.getElementById("inAppApiUrl");
+  const modelEl = document.getElementById("inAppApiModel");
+  if(p === "gemini"){
+    if(urlEl) urlEl.value = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
+    if(modelEl) modelEl.value = "gemini-2.5-flash";
+  }else if(p === "openai"){
+    if(urlEl) urlEl.value = "https://api.openai.com/v1/chat/completions";
+    if(modelEl) modelEl.value = "gpt-4o-mini";
+  }else if(p === "openrouter"){
+    if(urlEl) urlEl.value = "https://openrouter.ai/api/v1/chat/completions";
+    if(modelEl) modelEl.value = "google/gemini-2.5-flash";
+  }
+}
+
+async function callInAppApi(promptText){
+  const cfg = getInAppApiConfig();
+  if(!cfg.apiKey) throw new Error("Please add and save your API Key in Settings first.");
+  if(cfg.provider === "gemini" || cfg.apiUrl.includes("generativelanguage.googleapis.com")){
+    const modelName = cfg.model || "gemini-2.5-flash";
+    const base = cfg.apiUrl && cfg.apiUrl.startsWith("http")
+      ? cfg.apiUrl.split("?")[0]
+      : `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent`;
+    const res = await fetch(`${base}?key=${encodeURIComponent(cfg.apiKey)}`, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+        contents: [{parts: [{text: promptText}]}]
+      })
+    });
+    const data = await res.json();
+    if(!res.ok) throw new Error((data.error && data.error.message) || ("API Error " + res.status));
+    return data?.candidates?.[0]?.content?.parts?.[0]?.text || "No response text received.";
+  } else {
+    const endpoint = cfg.apiUrl || "https://api.openai.com/v1/chat/completions";
+    const res = await fetch(endpoint, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${cfg.apiKey}`
+      },
+      body: JSON.stringify({
+        model: cfg.model || "gpt-4o-mini",
+        messages: [{role: "user", content: promptText}]
+      })
+    });
+    const data = await res.json();
+    if(!res.ok) throw new Error((data.error && data.error.message) || ("API Error " + res.status));
+    return data?.choices?.[0]?.message?.content || data?.text || JSON.stringify(data);
+  }
+}
+
+async function testInAppApiConnection(){
+  saveInAppApiConfig();
+  const msg = document.getElementById("apiSaveStatus");
+  const out = document.getElementById("apiLivePreview");
+  if(msg){ msg.style.color = "#ffd0ed"; msg.textContent = "✨ Connecting to API..."; }
+  try{
+    const reply = await callInAppApi("Write a sweet 2-line romantic note for Kochi Pie with emojis.");
+    if(msg){ msg.style.color = "#a8ffbe"; msg.textContent = "✓ API Connected & Working!"; }
+    if(out){
+      out.classList.remove("hidden");
+      out.innerHTML = `<b>✨ Live API Note for Kochi Pie:</b><br><span style="color:#fff4ff">${reply.replace(/\n/g,"<br>")}</span>`;
+    }
+    if(typeof hearts === "function") hearts(20);
+  }catch(err){
+    if(msg){ msg.style.color = "#ff9bb3"; msg.textContent = "✗ " + (err.message || "Failed to connect to API"); }
+  }
+}
+
+function openSettings(){
+  const cfg = getInAppApiConfig();
+  const hasKey = Boolean(cfg.apiKey && cfg.apiKey.trim());
+  document.getElementById("pageContent").innerHTML = `
+    <div class="card story-card">
+      <div class="story-art">⚙️🔑💗</div>
+      <h2>App Settings & API</h2>
+      <div id="apiStatusBadge" class="api-badge ${hasKey ? 'active' : 'inactive'}">
+        ${hasKey ? '● API Key Configured' : '○ No API Key Set'}
+      </div>
+      <p style="font-size:14px;margin-top:4px">Configure your In-App API key below. It is stored securely on your device in localStorage without affecting any existing app features.</p>
+
+      <div class="api-input-group">
+        <label for="inAppApiProvider">API PROVIDER</label>
+        <select id="inAppApiProvider" class="api-input" onchange="onApiProviderChange()">
+          <option value="gemini" ${cfg.provider==='gemini'?'selected':''}>Google Gemini API</option>
+          <option value="openai" ${cfg.provider==='openai'?'selected':''}>OpenAI Compatible API</option>
+          <option value="openrouter" ${cfg.provider==='openrouter'?'selected':''}>OpenRouter API</option>
+          <option value="custom" ${cfg.provider==='custom'?'selected':''}>Custom API Endpoint</option>
+        </select>
+      </div>
+
+      <div class="api-input-group">
+        <label for="inAppApiKey">IN-APP API KEY</label>
+        <div class="api-row">
+          <input type="password" id="inAppApiKey" class="api-input" placeholder="Paste your API key here..." value="${cfg.apiKey.replace(/"/g,'&quot;')}" autocomplete="off">
+          <button type="button" id="toggleKeyBtn" class="api-toggle-btn" onclick="toggleApiKeyVisibility()">👁️ Show</button>
+        </div>
+      </div>
+
+      <div class="api-input-group">
+        <label for="inAppApiModel">MODEL NAME (OPTIONAL)</label>
+        <input type="text" id="inAppApiModel" class="api-input" placeholder="e.g. gemini-2.5-flash" value="${cfg.model.replace(/"/g,'&quot;')}">
+      </div>
+
+      <div class="api-input-group">
+        <label for="inAppApiUrl">API ENDPOINT URL (OPTIONAL)</label>
+        <input type="text" id="inAppApiUrl" class="api-input" placeholder="https://..." value="${cfg.apiUrl.replace(/"/g,'&quot;')}">
+      </div>
+
+      <div id="apiSaveStatus" class="api-status-msg"></div>
+      <div id="apiLivePreview" class="memory hidden" style="text-align:left;font-size:14px;line-height:1.6"></div>
+
+      <div class="story-controls">
+        <button class="btn" onclick="saveInAppApiConfig()">Save API Key 💾</button>
+        <button class="btn secondary" onclick="testInAppApiConnection()">Test & Generate Note ✨</button>
+      </div>
+      <div class="story-controls" style="margin-top:8px">
+        <button class="btn secondary" onclick="clearInAppApiConfig()">Clear Saved Key 🗑️</button>
+        <button class="btn secondary" onclick="showPage('home')">Back to Universe ♡</button>
+      </div>
+    </div>
+  `;
+  showPage("custom");
+}
+
+const foreverPrevShowPageSettings = showPage;
+showPage = function(name){
+  if(name === "settings"){
+    openSettings();
+    return;
+  }
+  foreverPrevShowPageSettings(name);
+};
+
+window.addEventListener("load", ()=>{
+  const cfg = getInAppApiConfig();
+  window.FOREVER_API_KEY = cfg.apiKey;
+  window.FOREVER_API_CONFIG = cfg;
+
+  // Add Settings pill button in top navigation bar next to Home without disturbing existing layout
+  const topBar = document.querySelector(".top");
+  const homeBtn = topBar ? topBar.querySelector(".pill") : null;
+  if(topBar && homeBtn){
+    const actionsWrap = document.createElement("div");
+    actionsWrap.className = "top-actions";
+    const settingsPill = document.createElement("button");
+    settingsPill.className = "pill";
+    settingsPill.innerHTML = "⚙️ Settings";
+    settingsPill.onclick = () => showPage("settings");
+    topBar.replaceChild(actionsWrap, homeBtn);
+    actionsWrap.appendChild(settingsPill);
+    actionsWrap.appendChild(homeBtn);
+  }
+
+  // Also add Settings tile to the universe grid for easy access
+  const grids = document.querySelectorAll("#home .grid");
+  const mainGrid = grids.length > 1 ? grids[1] : grids[0];
+  if(mainGrid){
+    const sTile = document.createElement("button");
+    sTile.className = "tile";
+    sTile.innerHTML = '<span class="emoji">⚙️</span><b>Settings & API</b><small>Add in-app API key</small>';
+    sTile.onclick = () => showPage("settings");
+    mainGrid.appendChild(sTile);
+  }
+});
+</script>
+
+
+<style>
+.extra-launcher{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.extra-btn{border:1px solid #ffb1df55;border-radius:20px;padding:16px 12px;color:#fff;background:linear-gradient(135deg,#ff5bb533,#8754ff44);text-align:left;min-height:105px;box-shadow:0 8px 25px #0002;transition:transform .2s}
+.extra-btn:active{transform:scale(.96)}.extra-btn strong{display:block;margin:6px 0}.extra-btn small{color:#e7c9f4}
+.game-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.game-box{border:1px solid #ffffff28;border-radius:18px;padding:14px;background:#ffffff0b;text-align:center}.game-board{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:12px 0}.game-cell{height:72px;border-radius:14px;border:1px solid #ffffff30;background:#ffffff10;color:white;font-size:28px}.memory-board{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.memory-cell{height:58px;border-radius:12px;background:#ffffff12;border:1px solid #ffffff2b;font-size:24px;color:white}.field{width:100%;padding:12px;border-radius:12px;border:1px solid #ffffff40;background:#180a2a;color:white;margin:7px 0}.status{font-size:13px;color:#ffd2f0;margin:10px 0}.settings-note{font-size:12px;color:#d7b6e8;line-height:1.5}
+</style>
+<script>
+/* Forever Us extras: local no-repeat history + optional user-configured Gemini generation. */
+const FU_KEY='foreverGeminiKey_v1', FU_HISTORY='fuGeneratedHistory_v1', FU_SEEN='fuSeenGenerated_v1';
+function fuRead(k,fb){try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(fb))}catch(e){return fb}}
+function fuSave(k,v){localStorage.setItem(k,JSON.stringify(v))}
+function fuEsc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function fuInit(){
+ const home=document.getElementById('home');if(!home||document.getElementById('fuExtras'))return;
+ const section=document.createElement('div');section.id='fuExtras';
+ section.innerHTML=`<div class="section-title">✨ More magic, more play</div><div class="extra-launcher">
+ <button class="extra-btn" onclick="fuOpen('games')"><span style="font-size:27px">🎮</span><strong>Love Game Arcade</strong><small>Mini-games, memory & XO</small></button>
+ <button class="extra-btn" onclick="fuOpen('ai')"><span style="font-size:27px">🪄</span><strong>Infinite Surprise Lab</strong><small>Fresh stories, poems & notes</small></button>
+ <button class="extra-btn" onclick="fuOpen('settings')"><span style="font-size:27px">⚙️</span><strong>AI Settings</strong><small>Configure your Gemini key</small></button>
+ <button class="extra-btn" onclick="fuOpen('poem')"><span style="font-size:27px">🌹</span><strong>Poem of the Moment</strong><small>A new little verse</small></button></div>`;
+ home.appendChild(section);
+}
+function fuOpen(which){
+ showPage('custom');const c=document.getElementById('pageContent');
+ if(which==='settings'){c.innerHTML=`<div class="card"><h2>AI Settings ⚙️</h2><p>Connect Gemini to create fresh original content after the built-in library runs out.</p><label>Gemini API key</label><input class="field" id="fuApiKey" type="password" autocomplete="off" placeholder="Paste your key here"><label>Model</label><select class="field" id="fuModel"><option value="gemini-2.5-flash">Gemini 2.5 Flash</option><option value="gemini-2.0-flash">Gemini 2.0 Flash</option></select><button class="btn" onclick="fuSaveSettings()">Save settings on this device</button><button class="btn secondary" onclick="fuTest()">Test Gemini connection</button><div id="fuSettingStatus" class="status"></div><p class="settings-note">Security: this is a browser-only app. A key saved here can be accessed by someone using this device or inspecting the app. For a public website, use a backend/serverless proxy and never publish your key. Don't share the key in source code.</p></div>`;document.getElementById('fuApiKey').value=localStorage.getItem(FU_KEY)||'';document.getElementById('fuModel').value=localStorage.getItem('fuGeminiModel')||'gemini-2.5-flash';return}
+ if(which==='games'){c.innerHTML=`<div class="card"><h2>Love Game Arcade 🎮</h2><p>Pick a game and collect a little happiness.</p><div class="game-grid">
+ <div class="game-box"><div style="font-size:32px">💞</div><b>Heart Tap</b><p>Tap the heart 10 times!</p><div id="tapCount" class="quote">0 / 10</div><button class="btn" onclick="fuTap()">💗 Tap me</button></div>
+ <div class="game-box"><div style="font-size:32px">🧠</div><b>Love Memory</b><p>Match the pairs.</p><button class="btn" onclick="fuMemory()">Play memory</button></div>
+ <div class="game-box"><div style="font-size:32px">⭕</div><b>XO Together</b><p>Classic tic-tac-toe.</p><button class="btn" onclick="fuXO()">Play XO</button></div>
+ <div class="game-box"><div style="font-size:32px">💌</div><b>Love Quiz</b><p>Pick your vibe.</p><button class="btn" onclick="fuQuiz()">Start quiz</button></div></div><div id="fuGameArea"></div></div>`;return}
+ if(which==='ai'){c.innerHTML=`<div class="card"><h2>Infinite Surprise Lab 🪄</h2><p>Generate a never-before-seen story, poem, love note, or cute image prompt. Generated text is checked against saved history before being shown.</p><div class="grid"><button class="tile" onclick="fuGenerate('romantic micro-story')">📖 New story</button><button class="tile" onclick="fuGenerate('original love poem')">🌹 New poem</button><button class="tile" onclick="fuGenerate('sweet personal love note')">💌 Love note</button><button class="tile" onclick="fuGenerate('cinematic image prompt for a romantic fantasy scene')">🖼️ Image idea</button></div><div id="fuGenerated" class="card"><p class="status">Your next original surprise will appear here.</p></div><button class="btn secondary" onclick="fuOpen('settings')">⚙️ AI settings</button></div>`;return}
+ if(which==='poem'){c.innerHTML=`<div class="card"><h2>Poem of the Moment 🌹</h2><div id="fuGenerated"><p>Let the stars write a new verse for you.</p></div><button class="btn" onclick="fuGenerate('short original romantic poem with fresh imagery')">Write a new poem ✨</button></div>`;return}
+}
+function fuSaveSettings(){const key=document.getElementById('fuApiKey').value.trim();if(key)localStorage.setItem(FU_KEY,key);else localStorage.removeItem(FU_KEY);localStorage.setItem('fuGeminiModel',document.getElementById('fuModel').value);document.getElementById('fuSettingStatus').textContent='Settings saved on this device.'}
+async function fuGemini(prompt){
+ const key=localStorage.getItem(FU_KEY);if(!key)throw Error('Add your Gemini API key in AI Settings first.');
+ const model=localStorage.getItem('fuGeminiModel')||'gemini-2.5-flash';
+ const resp=await fetch('https://generativelanguage.googleapis.com/v1beta/models/'+encodeURIComponent(model)+':generateContent?key='+encodeURIComponent(key),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({contents:[{parts:[{text:prompt}]}],generationConfig:{temperature:1.15,topP:.95,maxOutputTokens:900}})});
+ const data=await resp.json();if(!resp.ok)throw Error(data.error?.message||'Gemini request failed ('+resp.status+').');
+ return (data.candidates?.[0]?.content?.parts||[]).map(p=>p.text||'').join('').trim();
+}
+async function fuTest(){const el=document.getElementById('fuSettingStatus');fuSaveSettings();el.textContent='Testing connection…';try{let r=await fuGemini('Reply with exactly: Forever Us connection works.');el.textContent='Connected successfully: '+r.slice(0,120)}catch(e){el.textContent='Connection failed: '+e.message}}
+async function fuGenerate(kind){
+ const target=document.getElementById('fuGenerated');if(!target)return;target.innerHTML='<p class="status">✨ Creating something fresh…</p>';
+ const hist=fuRead(FU_HISTORY,[]);const recent=hist.slice(-35).map(x=>x.text).join('\n---\n').slice(-12000);
+ try{
+  let txt=await fuGemini(`Create one completely original ${kind} for a romantic app called Forever Us. Personalize gently for the nickname Kochi Pie. Avoid clichés and do not copy or closely paraphrase any previous item. Output a short title on the first line, then the content. No markdown code fences. Previously generated items to avoid repeating:\n${recent||'(none yet)'}`);
+  if(!txt)throw Error('The model returned an empty response.');
+  let normalized=txt.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+  if(hist.some(x=>x.norm===normalized)){txt=await fuGemini(`Write a DIFFERENT and genuinely new ${kind}. Avoid these already used items:\n${recent}\nReturn only a new title and content.`);normalized=txt.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();if(hist.some(x=>x.norm===normalized))throw Error('The response matched saved history. Tap again for a different one.')}
+  hist.push({kind,text:txt,norm:normalized,at:Date.now()});fuSave(FU_HISTORY,hist);
+  target.innerHTML='<h2>'+fuEsc(kind.replace(/^./,c=>c.toUpperCase()))+'</h2><p style="white-space:pre-wrap;line-height:1.8">'+fuEsc(txt)+'</p><p class="settings-note">Saved to your no-repeat history on this device.</p>';
+  hearts(12);
+ }catch(e){target.innerHTML='<p class="status">⚠️ '+fuEsc(e.message)+'</p><button class="btn secondary" onclick="fuOpen(\'settings\')">Open AI settings</button>'}
+}
+let fuTaps=0,fuMemVals=[],fuMemFirst=null,fuMemLock=false,fuXOBoard=Array(9).fill(''),fuXOTurn='X';
+function fuTap(){fuTaps++;let el=document.getElementById('tapCount');if(el){el.textContent=fuTaps+' / 10';if(fuTaps>=10){el.textContent='You win! 💖';hearts(18);fuTaps=0}}}
+function fuMemory(){const area=document.getElementById('fuGameArea');if(!area)return;fuMemVals=['💗','🌙','🌹','⭐','💗','🌙','🌹','⭐'].sort(()=>Math.random()-.5);fuMemFirst=null;fuMemLock=false;area.innerHTML='<h2>Love Memory</h2><p>Find all four pairs.</p><div class="memory-board">'+fuMemVals.map((v,i)=>`<button class="memory-cell" id="fmc${i}" onclick="fuFlip(${i})">❔</button>`).join('')+'</div><div id="fuMemStatus" class="status">Matches: 0 / 4</div>'}
+let fuMatched=[];
+function fuFlip(i){if(fuMemLock||fuMatched.includes(i)||document.getElementById('fmc'+i).textContent!=='❔')return;document.getElementById('fmc'+i).textContent=fuMemVals[i];if(fuMemFirst===null){fuMemFirst=i;return}let a=fuMemFirst;fuMemFirst=null;if(fuMemVals[a]===fuMemVals[i]){fuMatched.push(a,i);document.getElementById('fuMemStatus').textContent='Matches: '+(fuMatched.length/2)+' / 4';if(fuMatched.length===8)document.getElementById('fuMemStatus').textContent='You did it! 💞';}else{fuMemLock=true;setTimeout(()=>{let x=document.getElementById('fmc'+a),y=document.getElementById('fmc'+i);if(x)x.textContent='❔';if(y)y.textContent='❔';fuMemLock=false},700)}}
+function fuXO(){fuXOBoard=Array(9).fill('');fuXOTurn='X';const a=document.getElementById('fuGameArea');a.innerHTML='<h2>XO Together</h2><p id="fuXOStatus">Player X goes first.</p><div class="game-board">'+fuXOBoard.map((v,i)=>`<button class="game-cell" id="fxo${i}" onclick="fuXOMove(${i})"></button>`).join('')+'</div><button class="btn secondary" onclick="fuXO()">Restart game</button>'}
+function fuXOMove(i){if(fuXOBoard[i])return;fuXOBoard[i]=fuXOTurn;document.getElementById('fxo'+i).textContent=fuXOTurn;let wins=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];let win=wins.some(w=>w.every(n=>fuXOBoard[n]===fuXOTurn));let st=document.getElementById('fuXOStatus');if(win){st.textContent=fuXOTurn+' wins! 🎉';return}if(fuXOBoard.every(Boolean)){st.textContent="It's a draw 💗";return}fuXOTurn=fuXOTurn==='X'?'O':'X';st.textContent='Player '+fuXOTurn+' goes next.'}
+function fuQuiz(){const a=document.getElementById('fuGameArea');a.innerHTML='<h2>Your love vibe 💌</h2><p>Choose your perfect date:</p><button class="btn" onclick="fuQuizResult(\'moonlit walk\')">🌙 Moonlit walk</button><button class="btn" onclick="fuQuizResult(\'cozy movie night\')">🍿 Cozy movie night</button><button class="btn" onclick="fuQuizResult(\'spontaneous adventure\')">🎡 Spontaneous adventure</button><div id="fuQuizResult" class="status"></div>'}
+function fuQuizResult(v){document.getElementById('fuQuizResult').textContent='Your vibe: '+v+' — the best part is sharing it with someone special. 💗';hearts(8)}
+document.addEventListener('DOMContentLoaded',fuInit);setTimeout(fuInit,500);
+</script>
+
+</body></html>
